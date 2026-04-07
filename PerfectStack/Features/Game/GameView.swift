@@ -51,7 +51,7 @@ struct GameView: View {
         ZStack {
             AmbientBackground(theme: theme)
 
-            SpriteView(scene: coordinator.scene, options: [.allowsTransparency], preferredFramesPerSecond: 120)
+            SpriteView(scene: coordinator.scene, preferredFramesPerSecond: 120, options: [.allowsTransparency])
                 .ignoresSafeArea()
 
             Button {
