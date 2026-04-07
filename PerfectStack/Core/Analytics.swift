@@ -58,9 +58,10 @@ final class LocalAnalyticsClient: AnalyticsClient {
                     try? handle.write(contentsOf: newline)
                 }
             } else {
-                try? data.appending(newline).write(to: fileURL, options: .atomic)
+                var output = data
+                output.append(newline)
+                try? output.write(to: fileURL, options: .atomic)
             }
         }
     }
 }
-

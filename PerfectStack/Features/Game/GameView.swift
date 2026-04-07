@@ -81,9 +81,9 @@ struct GameView: View {
                                 .foregroundStyle(theme.accent)
                                 .padding(.horizontal, 14)
                                 .padding(.vertical, 9)
-                                .background(.white.opacity(0.055), in: Capsule(style: .continuous))
+                                .background(.white.opacity(0.055), in: Capsule())
                                 .overlay(
-                                    Capsule(style: .continuous)
+                                    Capsule()
                                         .stroke(theme.accent.opacity(0.2), lineWidth: 1)
                                 )
                                 .accessibilityIdentifier("game.combo")
@@ -123,9 +123,9 @@ struct GameView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 10)
-                    .background(.white.opacity(0.045), in: Capsule(style: .continuous))
+                    .background(.white.opacity(0.045), in: Capsule())
                     .overlay(
-                        Capsule(style: .continuous)
+                        Capsule()
                             .stroke(theme.accent.opacity(0.18), lineWidth: 1)
                     )
                     .padding(.bottom, 26)
@@ -142,9 +142,9 @@ struct GameView: View {
                         .foregroundStyle(theme.primaryText)
                         .padding(.horizontal, 18)
                         .padding(.vertical, 12)
-                        .background(.white.opacity(0.06), in: Capsule(style: .continuous))
+                        .background(.white.opacity(0.06), in: Capsule())
                         .overlay(
-                            Capsule(style: .continuous)
+                            Capsule()
                                 .stroke(theme.accent.opacity(0.2), lineWidth: 1)
                         )
                         .padding(.bottom, 92)

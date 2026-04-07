@@ -63,7 +63,7 @@ struct PrimaryPillButton: ButtonStyle {
             .frame(maxWidth: .infinity)
             .padding(.vertical, 18)
             .background(
-                Capsule(style: .continuous)
+                Capsule()
                     .fill(
                         LinearGradient(
                             colors: [theme.accent, theme.accent.opacity(0.78)],
@@ -88,10 +88,10 @@ struct SecondaryCapsuleButton: ButtonStyle {
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
             .background(
-                Capsule(style: .continuous)
+                Capsule()
                     .fill(.white.opacity(configuration.isPressed ? 0.08 : 0.05))
                     .overlay(
-                        Capsule(style: .continuous)
+                        Capsule()
                             .stroke(theme.accent.opacity(0.18), lineWidth: 1)
                     )
             )
@@ -163,4 +163,3 @@ struct ThemeChip: View {
         .opacity(isUnlocked ? 1 : 0.7)
     }
 }
-
