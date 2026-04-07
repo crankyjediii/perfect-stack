@@ -28,16 +28,16 @@ final class AppModel {
         themeCatalog: ThemeCatalog = .launch,
         persistence: PersistenceClient = PersistenceClient(),
         analytics: any AnalyticsClient = LocalAnalyticsClient(),
-        audioManager: AudioManager = AudioManager(),
-        hapticsManager: HapticsManager = HapticsManager(),
+        audioManager: AudioManager? = nil,
+        hapticsManager: HapticsManager? = nil,
         monetizationClient: any MonetizationClient = DisabledMonetizationClient()
     ) {
         self.settings = settings
         self.themeCatalog = themeCatalog
         self.persistence = persistence
         self.analytics = analytics
-        self.audioManager = audioManager
-        self.hapticsManager = hapticsManager
+        self.audioManager = audioManager ?? AudioManager()
+        self.hapticsManager = hapticsManager ?? HapticsManager()
         self.monetizationClient = monetizationClient
         dailyChallenge = DailyChallenge.forToday(date: Date())
 
@@ -182,4 +182,3 @@ final class AppModel {
         route = .home
     }
 }
-
