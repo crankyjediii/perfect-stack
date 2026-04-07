@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000000000000000000200 /* PerfectStackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000110 /* PerfectStackApp.swift */; };
+		A1000000000000000000201 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000111 /* AppModel.swift */; };
+		A1000000000000000000202 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000112 /* Models.swift */; };
+		A1000000000000000000203 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000113 /* Persistence.swift */; };
+		A1000000000000000000204 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000114 /* SettingsStore.swift */; };
+		A1000000000000000000205 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000115 /* Analytics.swift */; };
+		A1000000000000000000206 /* Monetization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000116 /* Monetization.swift */; };
+		A1000000000000000000207 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000117 /* AudioManager.swift */; };
+		A1000000000000000000208 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000118 /* HapticsManager.swift */; };
+		A1000000000000000000209 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000119 /* HomeView.swift */; };
+		A100000000000000000020A /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000011A /* GameEngine.swift */; };
+		A100000000000000000020B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000011B /* GameScene.swift */; };
+		A100000000000000000020C /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000011C /* GameCoordinator.swift */; };
+		A100000000000000000020D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000011D /* GameView.swift */; };
+		A100000000000000000020E /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000011E /* ResultsView.swift */; };
+		A100000000000000000020F /* SharedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000011F /* SharedUI.swift */; };
+		A1000000000000000000210 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000120 /* SettingsSheet.swift */; };
+		A1000000000000000000211 /* ShareCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000121 /* ShareCard.swift */; };
+		A1000000000000000000212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000122 /* Assets.xcassets */; };
+		A1000000000000000000213 /* GameEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000123 /* GameEngineTests.swift */; };
+		A1000000000000000000214 /* PerfectStackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000124 /* PerfectStackUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1000000000000000000610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1000000000000000000010;
+			remoteInfo = PerfectStack;
+		};
+		A1000000000000000000611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1000000000000000000010;
+			remoteInfo = PerfectStack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1000000000000000000110 /* PerfectStackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectStackApp.swift; sourceTree = "<group>"; };
+		A1000000000000000000111 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A1000000000000000000112 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A1000000000000000000113 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A1000000000000000000114 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		A1000000000000000000115 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		A1000000000000000000116 /* Monetization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monetization.swift; sourceTree = "<group>"; };
+		A1000000000000000000117 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		A1000000000000000000118 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		A1000000000000000000119 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A100000000000000000011A /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		A100000000000000000011B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A100000000000000000011C /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
+		A100000000000000000011D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A100000000000000000011E /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		A100000000000000000011F /* SharedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUI.swift; sourceTree = "<group>"; };
+		A1000000000000000000120 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
+		A1000000000000000000121 /* ShareCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCard.swift; sourceTree = "<group>"; };
+		A1000000000000000000122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000000000000000000123 /* GameEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngineTests.swift; sourceTree = "<group>"; };
+		A1000000000000000000124 /* PerfectStackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectStackUITests.swift; sourceTree = "<group>"; };
+		A1000000000000000000130 /* PerfectStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000000000000000000131 /* PerfectStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfectStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000000000000000000132 /* PerfectStackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfectStackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1000000000000000000301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1000000000000000000304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1000000000000000000306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000004 /* PerfectStack */,
+				A100000000000000000000D /* PerfectStackTests */,
+				A100000000000000000000E /* PerfectStackUITests */,
+				A1000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000130 /* PerfectStack.app */,
+				A1000000000000000000131 /* PerfectStackTests.xctest */,
+				A1000000000000000000132 /* PerfectStackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000004 /* PerfectStack */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000005 /* App */,
+				A1000000000000000000006 /* Core */,
+				A1000000000000000000007 /* Features */,
+				A100000000000000000000C /* Resources */,
+			);
+			path = PerfectStack;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000110 /* PerfectStackApp.swift */,
+				A1000000000000000000111 /* AppModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000006 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000112 /* Models.swift */,
+				A1000000000000000000113 /* Persistence.swift */,
+				A1000000000000000000114 /* SettingsStore.swift */,
+				A1000000000000000000115 /* Analytics.swift */,
+				A1000000000000000000116 /* Monetization.swift */,
+				A1000000000000000000117 /* AudioManager.swift */,
+				A1000000000000000000118 /* HapticsManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000007 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000008 /* Home */,
+				A1000000000000000000009 /* Game */,
+				A100000000000000000000A /* Results */,
+				A100000000000000000000B /* Shared */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000008 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000119 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1000000000000000000009 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000011A /* GameEngine.swift */,
+				A100000000000000000011B /* GameScene.swift */,
+				A100000000000000000011C /* GameCoordinator.swift */,
+				A100000000000000000011D /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A100000000000000000000A /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000011E /* ResultsView.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		A100000000000000000000B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000011F /* SharedUI.swift */,
+				A1000000000000000000120 /* SettingsSheet.swift */,
+				A1000000000000000000121 /* ShareCard.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A100000000000000000000C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000122 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A100000000000000000000D /* PerfectStackTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000123 /* GameEngineTests.swift */,
+			);
+			path = PerfectStackTests;
+			sourceTree = "<group>";
+		};
+		A100000000000000000000E /* PerfectStackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000124 /* PerfectStackUITests.swift */,
+			);
+			path = PerfectStackUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000000000000000000010 /* PerfectStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000000000000000000401 /* Build configuration list for PBXNativeTarget "PerfectStack" */;
+			buildPhases = (
+				A1000000000000000000300 /* Sources */,
+				A1000000000000000000301 /* Frameworks */,
+				A1000000000000000000302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerfectStack;
+			productName = PerfectStack;
+			productReference = A1000000000000000000130 /* PerfectStack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1000000000000000000011 /* PerfectStackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000000000000000000402 /* Build configuration list for PBXNativeTarget "PerfectStackTests" */;
+			buildPhases = (
+				A1000000000000000000303 /* Sources */,
+				A1000000000000000000304 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1000000000000000000600 /* PBXTargetDependency */,
+			);
+			name = PerfectStackTests;
+			productName = PerfectStackTests;
+			productReference = A1000000000000000000131 /* PerfectStackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1000000000000000000012 /* PerfectStackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000000000000000000403 /* Build configuration list for PBXNativeTarget "PerfectStackUITests" */;
+			buildPhases = (
+				A1000000000000000000305 /* Sources */,
+				A1000000000000000000306 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1000000000000000000601 /* PBXTargetDependency */,
+			);
+			name = PerfectStackUITests;
+			productName = PerfectStackUITests;
+			productReference = A1000000000000000000132 /* PerfectStackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				ORGANIZATIONNAME = Jimmy;
+				TargetAttributes = {
+					A1000000000000000000010 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A1000000000000000000011 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A1000000000000000000010;
+					};
+					A1000000000000000000012 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A1000000000000000000010;
+					};
+				};
+			};
+			buildConfigurationList = A1000000000000000000400 /* Build configuration list for PBXProject "PerfectStack" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1000000000000000000002;
+			productRefGroup = A1000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000000000000000000010 /* PerfectStack */,
+				A1000000000000000000011 /* PerfectStackTests */,
+				A1000000000000000000012 /* PerfectStackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000000000000000000302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000212 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000000000000000000300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000200 /* PerfectStackApp.swift in Sources */,
+				A1000000000000000000201 /* AppModel.swift in Sources */,
+				A1000000000000000000202 /* Models.swift in Sources */,
+				A1000000000000000000203 /* Persistence.swift in Sources */,
+				A1000000000000000000204 /* SettingsStore.swift in Sources */,
+				A1000000000000000000205 /* Analytics.swift in Sources */,
+				A1000000000000000000206 /* Monetization.swift in Sources */,
+				A1000000000000000000207 /* AudioManager.swift in Sources */,
+				A1000000000000000000208 /* HapticsManager.swift in Sources */,
+				A1000000000000000000209 /* HomeView.swift in Sources */,
+				A100000000000000000020A /* GameEngine.swift in Sources */,
+				A100000000000000000020B /* GameScene.swift in Sources */,
+				A100000000000000000020C /* GameCoordinator.swift in Sources */,
+				A100000000000000000020D /* GameView.swift in Sources */,
+				A100000000000000000020E /* ResultsView.swift in Sources */,
+				A100000000000000000020F /* SharedUI.swift in Sources */,
+				A1000000000000000000210 /* SettingsSheet.swift in Sources */,
+				A1000000000000000000211 /* ShareCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1000000000000000000303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000213 /* GameEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1000000000000000000305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000214 /* PerfectStackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1000000000000000000600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1000000000000000000010 /* PerfectStack */;
+			targetProxy = A1000000000000000000610 /* PBXContainerItemProxy */;
+		};
+		A1000000000000000000601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1000000000000000000010 /* PerfectStack */;
+			targetProxy = A1000000000000000000611 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1000000000000000000500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1000000000000000000501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A1000000000000000000502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmymullen.PerfectStack;
+				PRODUCT_MODULE_NAME = PerfectStack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1000000000000000000503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmymullen.PerfectStack;
+				PRODUCT_MODULE_NAME = PerfectStack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A1000000000000000000504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmymullen.PerfectStackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerfectStack.app/PerfectStack";
+			};
+			name = Debug;
+		};
+		A1000000000000000000505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmymullen.PerfectStackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerfectStack.app/PerfectStack";
+			};
+			name = Release;
+		};
+		A1000000000000000000506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmymullen.PerfectStackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PerfectStack;
+			};
+			name = Debug;
+		};
+		A1000000000000000000507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmymullen.PerfectStackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PerfectStack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1000000000000000000400 /* Build configuration list for PBXProject "PerfectStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000500 /* Debug */,
+				A1000000000000000000501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000401 /* Build configuration list for PBXNativeTarget "PerfectStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000502 /* Debug */,
+				A1000000000000000000503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000402 /* Build configuration list for PBXNativeTarget "PerfectStackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000504 /* Debug */,
+				A1000000000000000000505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000403 /* Build configuration list for PBXNativeTarget "PerfectStackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000506 /* Debug */,
+				A1000000000000000000507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A1000000000000000000001 /* Project object */;
+}
+
