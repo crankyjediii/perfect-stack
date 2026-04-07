@@ -7,10 +7,14 @@ on:
       - master
       - "codex/**"
   pull_request:
+  workflow_dispatch:
 
 jobs:
   build-and-test:
     runs-on: macos-latest
+    env:
+      DERIVED_DATA_PATH: ${{ github.workspace }}/DerivedData
+      APP_NAME: PerfectStack.app
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,6 +29,7 @@ jobs:
           xcodebuild \
             -project PerfectStack.xcodeproj \
             -scheme PerfectStack \
+            -derivedDataPath "$DERIVED_DATA_PATH" \
             -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=latest' \
             build
 
@@ -33,6 +38,24 @@ jobs:
           xcodebuild \
             -project PerfectStack.xcodeproj \
             -scheme PerfectStack \
+            -derivedDataPath "$DERIVED_DATA_PATH" \
             -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=latest' \
             test
 
+      - name: Package simulator app for Appetize
+        run: |
+          APP_PATH=$(find "$DERIVED_DATA_PATH/Build/Products" -type d -name "$APP_NAME" | head -n 1)
+          if [ -z "$APP_PATH" ]; then
+            echo "Unable to find built simulator app"
+            exit 1
+          fi
+
+          mkdir -p artifacts
+          ditto -c -k --sequesterRsrc --keepParent "$APP_PATH" "artifacts/PerfectStack-simulator.zip"
+
+      - name: Upload Appetize artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PerfectStack-simulator-app
+          path: artifacts/PerfectStack-simulator.zip
+          if-no-files-found: error
