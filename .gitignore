@@ -1,0 +1,13 @@
+.DS_Store
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.swp
+*.tmp
+*.log
+artifacts/screenshots/*.png
+
