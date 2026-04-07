@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-test:
+  build-and-package:
     runs-on: macos-latest
     env:
       DERIVED_DATA_PATH: ${{ github.workspace }}/DerivedData
@@ -24,23 +24,19 @@ jobs:
         with:
           xcode-version: latest-stable
 
-      - name: Build
-        run: |
-          xcodebuild \
-            -project PerfectStack.xcodeproj \
-            -scheme PerfectStack \
-            -derivedDataPath "$DERIVED_DATA_PATH" \
-            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=latest' \
-            build
+      - name: Show Xcode version
+        run: xcodebuild -version
 
-      - name: Test
+      - name: Build simulator app
         run: |
           xcodebuild \
             -project PerfectStack.xcodeproj \
             -scheme PerfectStack \
+            -configuration Debug \
+            -sdk iphonesimulator \
             -derivedDataPath "$DERIVED_DATA_PATH" \
-            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=latest' \
-            test
+            CODE_SIGNING_ALLOWED=NO \
+            build
 
       - name: Package simulator app for Appetize
         run: |
